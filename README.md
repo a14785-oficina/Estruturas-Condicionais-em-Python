@@ -60,4 +60,4 @@ O programa apresenta um menu com três níveis de exercícios:
 1. Certifique-se de que tem o Python instalado (versão 3.x).
 2. Faça o download ou clone este repositório:
    ```bash
-   git clone https://github.com/teu-username/nome-do-repositorio.git
+   git clone https://github.com/a14785-oficina/Estruturas-Condicionais-em-Python.git
