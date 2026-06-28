@@ -1,11 +1,11 @@
-# TP01 -- Introducao a Programacao e Python
+# TP01 — Introdução à Programação e Python
 
-**Disciplina:** Programacao e Sistemas de Informacao (PSI) -- Modulo 3
-**Trabalho Pratico:** 01
-**Turma:** 1.o I -- N.o 14785
+**Disciplina:** Programação e Sistemas de Informação (PSI) — Módulo 3
+**Trabalho Prático:** 01
+**Turma:** 1.º I — N.º 14785
 **Ano Letivo:** 2025/2026
 
-Primeiros passos em Python: saida de dados, entrada de dados, tipos de variaveis e operacoes aritmeticas simples.
+Primeiros passos em Python: saída de dados, entrada de dados, tipos de variáveis e operações aritméticas simples.
 
 ---
 
@@ -14,16 +14,16 @@ Primeiros passos em Python: saida de dados, entrada de dados, tipos de variaveis
 | Ficheiro | Enunciado |
 |---|---|
 | `01.py` | Escrever "Hello World", nome, curso e escola |
-| `02.py` | Pedir nome e idade -- mensagem personalizada e tipos de variaveis |
-| `03.py` | Pedir ano de nascimento -- calcular e mostrar a idade |
+| `02.py` | Pedir nome e idade — mensagem personalizada e tipos de variáveis |
+| `03.py` | Pedir ano de nascimento — calcular e mostrar a idade |
 
 ---
 
-## Exercicios
+## Exercícios
 
-### 01.py -- Hello World e Identificacao
+### 01.py — Hello World e Identificação
 
-Enunciado: Criar um programa que escreva Hello World, Ola Mundo, o teu nome, o teu curso e a tua escola.
+Enunciado: Criar um programa que escreva Hello World, Olá Mundo, o teu nome, o teu curso e a tua escola.
 
 ```python
 print("Hello World!")
@@ -36,9 +36,9 @@ print("OFICINA")
 
 ---
 
-### 02.py -- Nome, Idade e Tipos
+### 02.py — Nome, Idade e Tipos
 
-Enunciado: Criar um programa que pergunte o nome e a idade, mostre uma mensagem personalizada e indique o tipo de cada variavel.
+Enunciado: Criar um programa que pergunte o nome e a idade, mostre uma mensagem personalizada e indique o tipo de cada variável.
 
 ```python
 nome = input("Qual e o teu nome? ")
@@ -53,11 +53,11 @@ print("Tipo de nome: ", type(nome))
 print("Tipo de idade: ", type(idade))
 ```
 
-Nota: `input()` devolve sempre `str`, mesmo quando o utilizador introduz um numero.
+Nota: `input()` devolve sempre `str`, mesmo quando o utilizador introduz um número.
 
 ---
 
-### 03.py -- Ano de Nascimento e Calculo de Idade
+### 03.py — Ano de Nascimento e Cálculo de Idade
 
 Enunciado: Criar um programa que pergunte o nome e o ano de nascimento e calcule a idade aproximada usando `int()`.
 
@@ -76,43 +76,42 @@ print("Tipo de nome: ", type(nome))
 print("Tipo de ano_nascimento: ", type(ano_nascimento))
 ```
 
-Nota: `int(ano_nascimento)` converte a string para inteiro. Sem esta conversao, `2026 - ano_nascimento` geraria um `TypeError`.
+Nota: `int(ano_nascimento)` converte a string para inteiro. Sem esta conversão, `2026 - ano_nascimento` geraria um `TypeError`.
 
 ---
 
 ## Conceitos Abordados
 
-| Conceito | Descricao |
+| Conceito | Descrição |
 |---|---|
-| `print()` | Saida de dados para a consola |
-| `input()` | Entrada de dados -- devolve sempre `str` |
-| `type()` | Devolve o tipo de uma variavel |
+| `print()` | Saída de dados para a consola |
+| `input()` | Entrada de dados — devolve sempre `str` |
+| `type()` | Devolve o tipo de uma variável |
 | `int()` | Converte string para inteiro |
-| Concatenacao | Juncao de strings e variaveis com `,` |
-| Aritmetica | Subtracao: `2026 - int(ano)` |
+| Concatenação | Junção de strings e variáveis com `,` |
+| Aritmética | Subtração: `2026 - int(ano)` |
 
 ---
 
 ## Como Executar
 
-Pre-requisito: Python 3.x -- [python.org](https://www.python.org/)
+Pré-requisito: Python 3.x — [python.org](https://www.python.org/)
 
 ```bash
-git clone https://github.com/a14785-oficina/Trabalho-Pratico-01-M3.git
-cd Trabalho-Pratico-01-M3
+git clone https://github.com/a14785-oficina/introducao-ao-python.git
+cd introducao-ao-python
 python3 01.py
 ```
 
 ---
 
-## Navegacao -- Modulo 3
+## Navegação — Módulo 3
 
-| Posicao | Repositorio |
+| Posição | Repositório |
 |---|---|
-| Anterior | Inicio do Modulo 3 |
-| Seguinte | [TP02 -- Variaveis e Tipos de Dados](https://github.com/a14785-oficina/Trabalho-Pratico-02-M3) |
-| Portfolio | [oficina-jpc](https://github.com/a14785-oficina/oficina-jpc) |
+| Seguinte | [TP02 — Variáveis e Tipos de Dados](https://github.com/a14785-oficina/variaveis-e-tipos-de-dados) |
+| Portfólio | [oficina-jpc](https://github.com/a14785-oficina/oficina-jpc) |
 
 ---
 
-*PSI -- Modulo 3 -- Programacao Estruturada -- OFICINA -- 2025/2026*
+*PSI — Módulo 3 — Programação Estruturada — OFICINA — 2025/2026*
