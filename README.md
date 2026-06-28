@@ -1,95 +1,77 @@
-# TP01 — Introdução à Programação e Python
+# EXPA01 — Exercícios de Estruturas Condicionais em Python
 
 **Disciplina:** Programação e Sistemas de Informação (PSI) — Módulo 3
-**Trabalho Prático:** 01
+**Exercício Prático:** 01
 **Turma:** 1.º I — N.º 14785
 **Ano Letivo:** 2025/2026
 
-Primeiros passos em Python: saída de dados, entrada de dados, tipos de variáveis e operações aritméticas simples.
+15 exercícios organizados em três níveis de dificuldade, centrados em estruturas condicionais `if / elif / else`. O programa apresenta um menu e executa cada exercício com interação do utilizador.
 
 ---
 
 ## Ficheiros
 
-| Ficheiro | Enunciado |
+| Ficheiro | Descrição |
 |---|---|
-| `01.py` | Escrever "Hello World", nome, curso e escola |
-| `02.py` | Pedir nome e idade — mensagem personalizada e tipos de variáveis |
-| `03.py` | Pedir ano de nascimento — calcular e mostrar a idade |
+| `Exercicio Pratico 01 - Modulo 3 - Estruturas Condicionais em Python.py` | Programa completo com menu e todos os 15 exercícios |
+| `README.md` | Este ficheiro |
 
 ---
 
 ## Exercícios
 
-### 01.py — Hello World e Identificação
+### Nível Básico
 
-Enunciado: Criar um programa que escreva Hello World, Olá Mundo, o teu nome, o teu curso e a tua escola.
+| Código | Título | Descrição |
+|---|---|---|
+| B1 | Número Positivo ou Negativo | Classifica um número como positivo, negativo ou zero |
+| B2 | Maior de Idade | Verifica se o utilizador tem 18 ou mais anos |
+| B3 | Número Par ou Ímpar | Usa `%` para determinar paridade |
+| B4 | Comparação de Dois Números | Indica qual dos dois números é maior |
+| B5 | Password Simples | Valida acesso com a password `"python"` |
 
-```python
-print("Hello World!")
-print("Ola Mundo!")
-print("---")
-print("Joao Paulo")
-print("GPSI")
-print("OFICINA")
-```
+### Nível Intermédio
 
----
+| Código | Título | Descrição |
+|---|---|---|
+| I1 | Classificação de Nota | Excelente (>=18) — Bom (>=14) — Suficiente (>=10) — Reprovado (<10) |
+| I2 | Classificação de Idade | Criança / Jovem / Adulto / Sénior (com validação acima de 120 anos) |
+| I3 | Múltiplo de 3 e 5 | Verifica múltiplos de 3, de 5, de ambos ou de nenhum |
+| I4 | Login com Utilizador e Password | Autenticação com `admin` / `1234` |
+| I5 | Número dentro de Intervalo | Verifica se um número está entre 10 e 20 (inclusivo) |
 
-### 02.py — Nome, Idade e Tipos
+### Nível Avançado
 
-Enunciado: Criar um programa que pergunte o nome e a idade, mostre uma mensagem personalizada e indique o tipo de cada variável.
-
-```python
-nome = input("Qual e o teu nome? ")
-print("Nome introduzido: ", nome)
-print("---")
-idade = input("Quantos anos tens? ")
-print("Idade introduzida: ", idade)
-print("---")
-print("Ola,", nome, "tens", idade, "anos!")
-print("---")
-print("Tipo de nome: ", type(nome))
-print("Tipo de idade: ", type(idade))
-```
-
-Nota: `input()` devolve sempre `str`, mesmo quando o utilizador introduz um número.
-
----
-
-### 03.py — Ano de Nascimento e Cálculo de Idade
-
-Enunciado: Criar um programa que pergunte o nome e o ano de nascimento e calcule a idade aproximada usando `int()`.
-
-```python
-nome = input("Qual e o teu nome? ")
-print("Nome introduzido: ", nome)
-print("---")
-ano_nascimento = input("Em que ano nasceste? ")
-print("Ano de nascimento introduzido: ", ano_nascimento)
-print("---")
-print("Ola", nome, ", nasceste no ano", ano_nascimento, "!")
-print("---")
-print("Ola,", nome, "tens", 2026 - int(ano_nascimento), "anos!")
-print("---")
-print("Tipo de nome: ", type(nome))
-print("Tipo de ano_nascimento: ", type(ano_nascimento))
-```
-
-Nota: `int(ano_nascimento)` converte a string para inteiro. Sem esta conversão, `2026 - ano_nascimento` geraria um `TypeError`.
+| Código | Título | Descrição |
+|---|---|---|
+| A1 | Sistema Multibanco Simples | Saldo inicial 1000 euros — verifica se o levantamento é possível |
+| A2 | Maior de Quatro Números | Determina o maior entre 4 valores sem `max()` |
+| A3 | Classificação de IMC | `IMC = peso / altura²` — 4 categorias clínicas |
+| A4 | Sistema de Desconto | 10% (>=100 euros) — 5% (>=50 euros) — 0% (<50 euros) |
+| A5 | Verificação de Ano Bissexto | Determina se um ano é bissexto (divisível por 4) |
 
 ---
 
 ## Conceitos Abordados
 
-| Conceito | Descrição |
-|---|---|
-| `print()` | Saída de dados para a consola |
-| `input()` | Entrada de dados — devolve sempre `str` |
-| `type()` | Devolve o tipo de uma variável |
-| `int()` | Converte string para inteiro |
-| Concatenação | Junção de strings e variáveis com `,` |
-| Aritmética | Subtração: `2026 - int(ano)` |
+```python
+# Estrutura base
+if condicao:
+    ...
+elif outra_condicao:
+    ...
+else:
+    ...
+
+# Operadores utilizados
+>    >=    <    <=    ==    !=       # relacionais
+and    or    not                    # lógicos
+%                                   # módulo — paridade e múltiplos
+10 <= valor <= 20                   # encadeamento de comparações (I5)
+
+# Fórmula IMC (A3)
+imc = peso / (altura * altura)
+```
 
 ---
 
@@ -98,9 +80,9 @@ Nota: `int(ano_nascimento)` converte a string para inteiro. Sem esta conversão,
 Pré-requisito: Python 3.x — [python.org](https://www.python.org/)
 
 ```bash
-git clone https://github.com/a14785-oficina/introducao-ao-python.git
-cd introducao-ao-python
-python3 01.py
+git clone https://github.com/a14785-oficina/exercicios-estruturas-condicionais.git
+cd exercicios-estruturas-condicionais
+python3 "Exercicio Pratico 01 - Modulo 3 - Estruturas Condicionais em Python.py"
 ```
 
 ---
@@ -109,7 +91,8 @@ python3 01.py
 
 | Posição | Repositório |
 |---|---|
-| Seguinte | [TP02 — Variáveis e Tipos de Dados](https://github.com/a14785-oficina/variaveis-e-tipos-de-dados) |
+| Anterior | [TP04 — Estruturas Condicionais](https://github.com/a14785-oficina/estruturas-condicionais) |
+| Seguinte | [EXPA02 — Ciclos While e For](https://github.com/a14785-oficina/ciclos-while-e-for) |
 | Portfólio | [oficina-jpc](https://github.com/a14785-oficina/oficina-jpc) |
 
 ---
